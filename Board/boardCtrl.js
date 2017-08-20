@@ -6,16 +6,16 @@ angular.module("postBoard")
         content: "<p>lorem Ipsum is simply dummy text of the printing and typesetting industry. lorem Ipsum is simply dummy text of the printing and typesetting industry</p><p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
         createdAt: '2016-04-12 03:12:11', uploadedImage: ''
       },
-      { author: "eran 1", content: "lorem ipsum 1", createdAt: '1998-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/1/' },
-      { author: "eran 2", content: "lorem ipsum 1", createdAt: '2003-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/2/' },
-      { author: "eran 3", content: "lorem ipsum 1", createdAt: '2007-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/3/' },
+      { author: "eran 1", content: "lorem ipsum 1", createdAt: '1998-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/1/' },
+      { author: "eran 2", content: "lorem ipsum 1", createdAt: '2003-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/2/' },
+      { author: "eran 3", content: "lorem ipsum 1", createdAt: '2007-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/3/' },
       { author: "eran 4", content: "lorem ipsum 1", createdAt: '2006-04-12 03:12:11', uploadedImage: '' },
-      { author: "eran 5", content: "lorem ipsum 1", createdAt: '2005-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/5/' },
-      { author: "eran 6", content: "lorem ipsum 1", createdAt: '2013-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/6/' },
-      { author: "eran 7", content: "lorem ipsum 1", createdAt: '1999-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/7/' },
-      { author: "eran 8", content: "lorem ipsum 1", createdAt: '2001-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/8/' },
-      { author: "eran 9", content: "lorem ipsum 1", createdAt: '2011-04-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/9/' },
-      { author: "eran 10", content: "lorem ipsum 1", createdAt: '2011-05-12 03:12:11', uploadedImage: 'http://lorempixel.com/400/200/sports/10/' },
+      { author: "eran 5", content: "lorem ipsum 1", createdAt: '2005-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/5/' },
+      { author: "eran 6", content: "lorem ipsum 1", createdAt: '2013-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/6/' },
+      { author: "eran 7", content: "lorem ipsum 1", createdAt: '1999-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/7/' },
+      { author: "eran 8", content: "lorem ipsum 1", createdAt: '2001-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/8/' },
+      { author: "eran 9", content: "lorem ipsum 1", createdAt: '2011-04-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/9/' },
+      { author: "eran 10", content: "lorem ipsum 1", createdAt: '2011-05-12 03:12:11', uploadedImage: '//lorempixel.com/400/200/sports/10/' },
       { author: "eran 11", content: "lorem ipsum 1", createdAt: '2012-04-12 03:12:11', uploadedImage: '' }];
 
       //sort by date the most new post will be the first to show
