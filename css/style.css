@@ -1,7 +1,16 @@
-html,body{height: auto;} 
-.post{ height:300px; min-width:285px; margin:10px;  }
- .post fieldset{ border:1px solid #ccc; height:100%; cursor: pointer;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12); border-radius: 2px;}
+html,body{height: auto;}
+.post{ 
+    height:300px; 
+    min-width:285px; 
+    margin:10px;
+}
+.post fieldset{ 
+    border:1px solid #ccc;
+    height:100%; 
+    cursor: pointer; 
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12); 
+    border-radius: 2px;
+}
 .capitalize{ text-transform: capitalize; }
 .postContent{
 /* BOTH of the following are required for text-overflow */
@@ -9,18 +18,11 @@ html,body{height: auto;}
   text-overflow: ellipsis;
   padding:10px;
 }
-
-.postAuthor{
-    /* margin-top:-12px;
-    padding: 0 10px; 
-    background:#fff; */
-}
 legend{
     width:auto;
     padding:0 5px;
     font-size: initial;
 }
-
 .addButton{
     height: 100%;
     display: flex;
@@ -53,14 +55,7 @@ legend{
 .addButton div .plus{
     position:absolute;
     z-index: 1;
-} 
-
-.addPostDialog{
-    width:80%;
 }
-.uploadedImage{
-    min-height:130px;
-}
-.post-dialog-author{
-    text-decoration: underline;
-}
+.addPostDialog{ width:80%; }
+.uploadedImage{ min-height:130px; }
+.post-dialog-author{ text-decoration: underline; }
