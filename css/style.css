@@ -1,21 +1,22 @@
 html,body{height: auto;}
 .post{ 
     height:300px; 
-    min-width:285px; 
     margin:10px;
 }
+
 .post fieldset{ 
     border:1px solid #ccc;
     height:100%; 
     cursor: pointer; 
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12); 
     border-radius: 2px;
+    /* BOTH of the following are required for text-overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .capitalize{ text-transform: capitalize; }
 .postContent{
-/* BOTH of the following are required for text-overflow */
-  overflow: hidden;
-  text-overflow: ellipsis;
+
   padding:10px;
 }
 legend{
