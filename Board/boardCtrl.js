@@ -67,12 +67,12 @@ angular.module("postBoard")
     }
 
     $scope.readPost = function (post) {
-      const url = '../Post/postDialog.html';
+      const url = '/Post/postDialog.html';
       dialog(url, post);
     }
 
     $scope.addPost = function () {
-      const url = '../Post/addPostDialog.html';
+      const url = '/Post/addPostDialog.html';
       dialog(url);
     }
   })
