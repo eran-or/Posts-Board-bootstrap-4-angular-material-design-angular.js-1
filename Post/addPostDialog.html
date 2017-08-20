@@ -1,0 +1,41 @@
+<md-dialog aria-label="Note Dialog" class="addPostDialog">
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <h3>Post a new note</span></h3>
+            <md-divider></md-divider>
+            <form name="postForm">
+                <md-input-container class="md-block">
+                    <label>Author Name</label>
+                    <input name="author" ng-model="post.author" required>
+                    <div ng-messages="postForm.author.$error">
+                        <div ng-message="required">Author name is required!</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>what would you like to say?</label>
+                    <div class="md-resize-wrapper">
+                        <textarea name="content" ng-model="post.content" required md-maxlength="1300" rows="5" md-select-on-focus></textarea>
+                    </div>
+                    <div ng-messages="postForm.content.$error" ng-show="postForm.content.$dirty">
+                        <div ng-message="required">This is required!</div>
+                        <div ng-message="md-maxlength">That's too long!</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>would you like to show something?</label>
+                    <div layout>
+                        <div flex>
+                            <input aria-label="Upload Image" ng-model="fileInput[0].name" ng-click="uploadImage()">
+                        </div>
+                        <md-button class="md-primary md-raised" ng-click="uploadImage()">Choose File</md-button>
+                    </div>
+                </md-input-container>
+                <input type="file" files-input ng-model="fileInput" id="fileInput" class="ng-hide" /> 
+            </form>
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions>
+        <md-button type="submit" ng-disabled="postForm.$invalid" ng-click="submitPost(post)" class="md-primary">Post</md-button>
+        <md-button ng-click="closeDialog()" class="md-primary">Cancel</md-button>
+    </md-dialog-actions>
+</md-dialog>

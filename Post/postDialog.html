@@ -1,0 +1,15 @@
+<md-dialog aria-label="Note Dialog">
+  <md-dialog-content>
+    <div class="md-dialog-content">
+      <h3>A note from <span class="post-dialog-author"> {{post.author}} </span></h3>
+      <md-divider></md-divider>
+      <div ng-bind-html="sanitaize(post.content)"></div>
+      <div class="uploadedImage" layout="row" layout-align="center center">
+        <img ng-src="{{post.uploadedImage || 'http://via.placeholder.com/350x150?text=Placeholder'}}" />
+      </div>
+    </div>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <md-button ng-click="closeDialog()" class="md-primary">Close</md-button>
+  </md-dialog-actions>
+</md-dialog>
